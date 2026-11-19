@@ -244,6 +244,7 @@ export async function updateExceptionStatusApi(
     status: nextStatus,
     updatedAt: new Date().toISOString(),
     auditEventId: `aud-${Date.now()}`,
+    actor
   } as unknown as {
     status: ExceptionStatus;
     updatedAt: string;
